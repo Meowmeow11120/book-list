@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <h1>Library</h1>
+    </header>
+    <main>
+        <div class="btn">
+            <button>
+                <h2 class="add">+ Add Book</h2>
+            </button>
+        </div>
+        <div class="popup-container">
+            <div class="popup" id="popup">
+                <div>
+                    <label for="book">Book Name</label>
+                    <input type="text" class="book">
+                </div>
+                <div>
+                    <label for="author">Author Name</label>
+                    <input type="text" class="author">
+                </div>
+                <div>
+                    <label for="page">Page</label>
+                    <input type="number" min="1" value="1" class="page">
+                </div>
+                <div>
+                    <label for="read">Read Or unread</label>
+                    <input type="text" class="read">
+                </div>
+                <button class="Done">Done</button>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="card">
+                <h3 class="book-name" name="book">yugi oh</h3>
+                <h3 class="book-author" name="author">yasuo</h3>
+                <div><input class="book-page" type="number" min="1" value="1" name="page">pages</input></div>
+                <button class="status">
+                    <h3>Not Read</h3>
+                </button>
+                <button class="remove">
+                    <h3>Remove</h3>
+                </button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
